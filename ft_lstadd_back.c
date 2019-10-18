@@ -6,7 +6,7 @@
 /*   By: cclaude <cclaude@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 15:48:45 by cclaude           #+#    #+#             */
-/*   Updated: 2019/10/16 16:27:02 by cclaude          ###   ########.fr       */
+/*   Updated: 2019/10/18 16:11:10 by cclaude          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,15 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list	*temp;
 
-	if (!alst || *alst == NULL)
+	if (!alst)
 		return ;
-	else
+	if (*alst != NULL)
 	{
 		temp = *alst;
 		while (temp->next != NULL)
 			temp = temp->next;
 		temp->next = new;
 	}
+	else
+		*alst = new;
 }
