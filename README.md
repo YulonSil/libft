@@ -4,11 +4,15 @@
 
 ## Final grade : 107/115
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Mandatory part : 100/100
+
+Bonus : 7/15
 
 ### How to use it
 
-After cloning the repository in your working directory, you can use the functions in your code. Compile with the following flags to include the library in your project :
+Using ``make`` will create the ``libft.a`` binary.
+
+To include the library in your project, clone the repository in your working tree qnd compile with the following flags :
 
 ```
 gcc -L. -lft file.c
