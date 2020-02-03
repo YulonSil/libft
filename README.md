@@ -12,7 +12,7 @@ Bonus : 7/15
 
 Using ``make`` will create the ``libft.a`` binary.
 
-To include the library in your project, clone the repository in your working tree qnd compile with the following flags :
+To include the library in your project, clone the repository in your working tree and compile with the following flags :
 
 ```
 gcc -L. -lft file.c
